@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="holder">
+        <h2>Ajax Example</h2>
+        <div class="center-button">
+            <button id="loadText">ShowText</button>
+            <button id="loadPage">ShowPage</button>
+            <button id="del">Delete</button>
+        </div>
+        <hr>
+        <div id="loader"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#loadText').click(function () {
+                $('#loader').load('./text.html');
+            });
+        });
+        $(document).ready(function () {
+            $('#loadPage').click(function () {
+                $('#loader').load('./page.html');
+            });
+        });
+        $('#del').click(function () {
+            document.getElementById('loader').innerHTML='';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+#holder {
+    width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+#holder h2 {
+    text-align: center;
+}
+.center-button {
+    text-align: center;
+}
+#loadPage, #loadText {
+    margin: 10px;
+}
+.center-button #del {
+    margin-left: 10px;
+}
+#loader {
+    text-align: center;
+}
